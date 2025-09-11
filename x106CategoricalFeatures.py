@@ -30,7 +30,7 @@ def categorical_feature_static_items():
 
 X, y, df, low_cardinality = categorical_feature_static_items()
 
-st.subheader('Visualization of Low-cardinality Features')
+st.subheader('Visualization of Low-cardinality Features (<= 10)')
 cbX = st.selectbox(label='Categorical feature', options=sorted(low_cardinality["Feature"]), index=0, key='cbX')
 
 
