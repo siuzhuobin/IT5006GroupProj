@@ -37,7 +37,7 @@ fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 5))
 
 
 st.subheader('Distribution Visualization')
-cbX = st.selectbox(label='Numerical feature', options=numeric_cols, index=0, key='cbX')
+cbX = st.selectbox(label='Numerical feature', options=sorted(numeric_cols), index=0, key='cbX')
 
 col = cbX
 df[col].hist(bins=30,  alpha=0.7, color='skyblue', ax = ax1)
